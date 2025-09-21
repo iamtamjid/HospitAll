@@ -1,0 +1,14 @@
+https://www.jootoor.com/red-gradient-color/
+https://www.color-hex.com/color-palette/7080
+
+
+(to right, #B91372, #6B0F1A)
+
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 5px solid #2196f3;
+
+6d0202
+
