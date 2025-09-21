@@ -1,0 +1,130 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 5px solid #2196f3;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Management Cards */
+.management-section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  height: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.management-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.management-section h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.management-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.management-section .btn {
+  background: linear-gradient(to right, #4caf50, #3e8e41);
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 30px;
+  display: inline-block;
+  transition: background 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.management-section .btn:hover {
+  background: linear-gradient(to right, #45a049, #367c39);
+}
+
+/* Add Box Shadow to Buttons */
+.management-section .btn:active {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .dashboard-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .management-section {
+    width: 80%;
+    max-width: 400px;
+  }
+}
